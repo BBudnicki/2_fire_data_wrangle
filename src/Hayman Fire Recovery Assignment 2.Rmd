@@ -13,6 +13,9 @@ knit: (function(input, ...) {
   })
 ---
 
+## [Check out Github](https://github.com/BBudnicki/2_fire_data_wrangle)
+
+
 ```{r setup, warning=F,message=F}
 library(tidyverse)
 library(tidyr)
