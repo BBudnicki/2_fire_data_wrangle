@@ -260,7 +260,7 @@ full_wide_spread <- spread(full_long, key=data, value=value, fill = NA, convert 
 ```
 
 
-## Question 7 (Bonus): Use Climage Engine to pull the same data for the assignment, but updated with 2020/2021 data.
+## Question 7 (Bonus): Use Climate Engine to pull the same data for the assignment, but updated with 2020/2021 data.
 
 <input type="checkbox"> Not completed</input>
 
