@@ -1,8 +1,16 @@
 ---
 title: "Hayman Fire Recovery"
-author: "Matthew Ross"
-date: "10/3/2019"
+author: "Brandon Budnicki"
+date: "1/33/2022"
 output: html_document
+
+knit: (function(input, ...) {
+    rmarkdown::render(
+      input,
+      output_file = 'index',
+      output_dir='../'
+    )
+  })
 ---
 
 ```{r setup, warning=F,message=F}
@@ -145,7 +153,7 @@ ggplot(ndsi_ndvi_year,aes(x=ndsi, y=ndvi)) +
 ### Answer
 The previous year's snow cover has little if any influence on vegetation growth the following summer. Both for the Site 1 & Site 2 pre burn.
 
-## Q3
+## Question 3
 
 How is the snow effect from question 2 different between pre- and post-burn
 and burned and unburned? 
@@ -216,10 +224,10 @@ ggplot() +
 
 Snow accumulation was greatest in January & February. Site 1 had greater snowfalls than site 2. Interestingly the snow accumulation post burn at site 2 was less than pre burn. This might be caused by a number of factors related or not related to the burn.
 
-## Bonus Question: Redo all problems with `spread` and `gather` using modern tidyverse syntax. 
+## Question 6 (Bonus): Redo all problems with `spread` and `gather` using modern tidyverse syntax. 
 [Article on topic](https://www.findingyourway.io/blog/2019/09/18/2019-09-18-tidyr-1-0-gather-and-spread-are-dead/)
 
-  -[x] complete
+<input type="checkbox" checked> Complete</input>
 
 ### Gather
 df %>% gather("key", "value", x, y, z) 
@@ -249,8 +257,9 @@ full_wide_spread <- spread(full_long, key=data, value=value, fill = NA, convert 
 ```
 
 
-## Bonus Question: Use Climage Engine to pull the same data for the assignment, but updated with 2020/2021 data.
+## Question 7 (Bonus): Use Climage Engine to pull the same data for the assignment, but updated with 2020/2021 data.
 
+<input type="checkbox"> Not completed</input>
 
 
 
