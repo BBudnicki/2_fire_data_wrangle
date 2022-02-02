@@ -262,7 +262,11 @@ full_wide_spread <- spread(full_long, key=data, value=value, fill = NA, convert 
 
 ## Question 7 (Bonus): Use Climate Engine to pull the same data for the assignment, but updated with 2020/2021 data.
 
-<input type="checkbox"> Not completed</input>
+<input type="checkbox"> Error</input>
+
+Google earth enginer threw and error. Seems like there servers are overloaded because it would not let me pull more than 1 year of NDVI data.
+
+![Google Earth Engine Error](../EarthEngineError.png)
 
 
 
