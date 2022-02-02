@@ -146,8 +146,8 @@ ndsi_ndvi_year <- rbind(ndsi_year,ndvi_year) %>%
 
 ggplot(ndsi_ndvi_year,aes(x=ndsi, y=ndvi)) + 
   geom_point(aes( color=site_type)) +
-  ggtitle('Figure 3: Impact of snow acculumlation on vegatative growth (NDVI over NDSI)')+
-  scale_x_continuous(name="NDSI (Snow Acculumlation)") +
+  ggtitle('Figure 3: Impact of snow cover on vegatative growth (NDVI over NDSI)')+
+  scale_x_continuous(name="NDSI (Snow Cover)") +
   scale_y_continuous(name="NDVI (Vegitation)")
 
 
@@ -220,12 +220,12 @@ ggplot() +
   ggtitle('Figure 4: Snow (NDSI) by Month')+
   scale_x_continuous(name="Month",   breaks = c(1,2,3,4,5,6,7,8,9,10,11,12),
   label = c("Jan", "Feb", "Mar", "Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")) +
-  scale_y_continuous(name="Average NDSI (snow accumulation)")
+  scale_y_continuous(name="Average NDSI (snow cover)")
 ```
 
 ### Answer
 
-Snow accumulation was greatest in January & February. Site 1 had greater snowfalls than site 2. Interestingly the snow accumulation post burn at site 2 was less than pre burn. This might be caused by a number of factors related or not related to the burn.
+Snow cover was greatest in January & February. Site 1 had greater cover than site 2. This can be used as a proxy for snow fall, but is not a direct measurement as the freeze thaw cycle impacts the cover. Interestingly the snow cover post burn at site 2 was less than pre burn. This might be caused by a number of factors related or not related to the burn as theorized in answer 3.
 
 ## Question 6 (Bonus): Redo all problems with `spread` and `gather` using modern tidyverse syntax. 
 [Article on topic](https://www.findingyourway.io/blog/2019/09/18/2019-09-18-tidyr-1-0-gather-and-spread-are-dead/)
